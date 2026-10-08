@@ -1,9 +1,11 @@
-﻿namespace TestApp;
+﻿using F23.StringSimilarity;
+
+namespace TestApp;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("The similarity is: {0}",new Cosine().Similarity("Hello, world!", "Hello, class!"));
     }
 }
